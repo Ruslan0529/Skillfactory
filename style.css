@@ -1,19 +1,29 @@
 body {
     margin: 0;
 }
+
 button {
     cursor: pointer;
 }
+
 .color-e3b873 {
     color: #e3b873;
 }
+
 .color-white {
     color: #ffffff;
 }
+
 .font-nunito-sans-400 {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
 }
+
+.font-yeseva-one-400 {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+}
+
 .header {
     background-color: #131313;
     height: 83px;
@@ -21,71 +31,81 @@ button {
     align-items: center;
     justify-content: center;
 }
+
 .header__container {
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .project-company__text {
     margin: 0;
     font-size: 11px;
 }
+
 .wrapper-nav-list__nav-list-header {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     gap: 3vw;
 }
+
 .item__link-header {
     text-decoration: none;
     font-size: 11px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
 }
+
 .item__link-header:hover {
     color: #e3b873;
 }
+
 .header-number__phone-number {
     font-size: 11px;
     text-decoration-line: underline;
 }
+
 .double-style {
     border: none;
     border-radius: 2px;
     background-color: #e3b873;
-    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.20);
+    box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
     text-align: center;
     font-size: 11px;
     font-style: italic;
     padding: 13px 33px;
 }
+
 .section-upper {
     background-color: #3f3f3f;
 }
+
 .section-upper__container {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.70) url(image/image\ 4.3.png);
+    background: rgba(0, 0, 0, 0.7) url(image/image\ 4.3.png);
     background-position: center;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     height: 707px;
 }
-.container__container-upper {
+
+.container__upper-content {
     width: 515px;
     margin-left: 134px;
 }
-.container-upper__title {
-    font-family: "Yeseva One", serif;
+
+.upper-content__title {
     font-size: 40px;
-    font-weight: 400;
     line-height: 132%;
 }
-.container-upper__text {
+
+.upper-content__text {
     font-size: 22px;
     line-height: 163%;
 }
+
 .button-container__button-two {
     border-radius: 2px;
     border: 1px solid #ffffff;
@@ -93,4 +113,97 @@ button {
     font-style: italic;
     padding: 13px 17px;
     background-color: transparent;
+}
+
+.section-upper__additional-container {
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+}
+
+.additional-container__card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 900px;
+}
+
+.card-container__card-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 47px;
+    width: 442px;
+}
+
+.card-left__title {
+    font-size: 27px;
+    line-height: 138%;
+    letter-spacing: -1.89px;
+}
+
+.card-left__text {
+    font-size: 14px;
+    line-height: 190%;
+}
+
+.card-left__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 60px
+}
+
+.info__subtitle {
+    font-size: 18px;
+    line-height: 138%;
+}
+
+.info__text {
+    font-size: 13px;
+    line-height: 163%;
+}
+
+.card-left__vector {
+    margin-top: 86px;
+}
+
+.card-right__slide-list {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    padding: 0;
+    margin-bottom: 38px;
+}
+
+.item__link {
+    color: rgba(255, 255, 255, 0.30);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 138%;
+}
+
+.item__link:hover {
+    color: #e3b873;
+    text-decoration: underline;
+}
+
+
+@keyframes slideshow {
+    0% {
+        background-image: url(image/image\ 2.png);
+    }
+
+    50% {
+        background-image: url(image/image\ 2.1.png);
+    }
+
+    100% {
+        background-image: url(image/image\ 2.png);
+    }
+}
+
+.card-right__slide-image {
+    width: 679px;
+    height: 482px;
+    animation: slideshow 8s infinite;
 }
