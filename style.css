@@ -1,6 +1,9 @@
 body {
     margin: 0;
 }
+button {
+    cursor: pointer;
+}
 .color-e3b873 {
     color: #e3b873;
 }
@@ -47,7 +50,8 @@ body {
     font-size: 11px;
     text-decoration-line: underline;
 }
-.header-button__button-reqest-call {
+.double-style {
+    border: none;
     border-radius: 2px;
     background-color: #e3b873;
     box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.20);
@@ -55,4 +59,38 @@ body {
     font-size: 11px;
     font-style: italic;
     padding: 13px 33px;
+}
+.section-upper {
+    background-color: #3f3f3f;
+}
+.section-upper__container {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.70) url(image/image\ 4.3.png);
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    height: 707px;
+}
+.container__container-upper {
+    width: 515px;
+    margin-left: 134px;
+}
+.container-upper__title {
+    font-family: "Yeseva One", serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 132%;
+}
+.container-upper__text {
+    font-size: 22px;
+    line-height: 163%;
+}
+.button-container__button-two {
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    font-size: 11px;
+    font-style: italic;
+    padding: 13px 17px;
+    background-color: transparent;
 }
