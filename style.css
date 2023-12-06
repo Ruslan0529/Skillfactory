@@ -941,6 +941,40 @@ input {
     width: 100%;
 }
 
+@media screen and (min-width: 2400px) {
+    .header-footer__container {
+        width: 58%;
+    }
+
+    .section-upper__container {
+        background-size: 100%;
+    }
+
+    .container__upper-content {
+        margin-left: 650px;
+    }
+
+    .absolute-container__image-container {
+        display: none;
+    }
+
+    .section-upper__form-container {
+        display: none;
+    }
+
+    .section-materials {
+        display: none;
+    }
+
+    .section-bottom {
+        display: none;
+    }
+
+    #footer {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .container__header-footer-nav {
         display: none;
