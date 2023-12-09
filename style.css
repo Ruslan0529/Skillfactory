@@ -127,7 +127,7 @@ button {
 
 .additional-container__card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     width: 94%;
     height: 900px;
@@ -976,6 +976,10 @@ input {
     #footer {
         display: none;
     }
+
+    .additional-container__card-container {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2400px) {
@@ -985,6 +989,7 @@ input {
 
     .additional-container__card-container {
         width: 80%;
+        justify-content: space-between;
     }
 
     .section-upper__container {
@@ -1158,6 +1163,10 @@ input {
     }
 
     .card-container__card-left {}
+
+    .additional-container__card-container {
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 799px) {
@@ -1210,6 +1219,7 @@ input {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
 
     .card-container__card-left {
@@ -1286,12 +1296,13 @@ input {
     }
 
     .section-materials {
-        margin-top: 31vw;
+        margin-top: 23vw;
     }
 
     #media-display {
         display: flex;
         width: 100%;
+        height: 420px;
         gap: 30px;
         margin-top: -200px;
         padding-bottom: 0;
@@ -1357,7 +1368,7 @@ input {
     }
 
     .section-bottom {
-        margin-top: 250px;
+        margin-top: 190px;
     }
 
     .content-container__bottom-container {
@@ -1368,9 +1379,8 @@ input {
 
     .form__container-bottom {
         padding-top: 250px;
-        padding-bottom: 420px;
         width: 100%;
-        height: 512px;
+        height: 1100px;
     }
 
     .form-black-two__form-two {
@@ -1380,7 +1390,7 @@ input {
 
     .bottom-container__image-container {
         width: 94%;
-        margin-top: 507px;
+        margin-top: 550px;
         background-color: black;
         z-index: 1;
     }
